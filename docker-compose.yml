@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  database:
+    image: postgres:14
+    container_name: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: films
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: admin
+    volumes:
+      - pg-data:/var/postgresql/data
+
+
+volumes:
+  pg-data:
