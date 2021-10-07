@@ -8,3 +8,4 @@ class UserType(Base):
 
     id = Column(String, primary_key=True, nullable=False)
     name = Column(String, nullable=False)
+    

@@ -78,7 +78,7 @@ def upgrade():
             duration INTEGER NOT NULL,
             name VARCHAR NOT NULL,
             release_date DATE NOT NULL,
-            rating NUMERIC(1),
+            rating NUMERIC(1) NOT NULL,
             director_id UUID NOT NULL REFERENCES persons(id) ON UPDATE CASCADE ON DELETE CASCADE
         );
         """
