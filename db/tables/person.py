@@ -5,7 +5,7 @@ from ..base import Base
 
 
 class Person(Base):
-    __tablename__ = "person"
+    __tablename__ = "persons"
 
     id = Column(
         UUID(as_uuid=True),
